@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="763.0" prefWidth="1501.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Charleston.Controller.DashboardFormController">
+   <children>
+      <VBox alignment="TOP_RIGHT" prefHeight="767.0" prefWidth="392.0" style="-fx-background-color: #3a207f;">
+         <children>
+            <Pane prefHeight="173.0" prefWidth="392.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="112.0" layoutX="140.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="64.0" layoutY="106.0" prefHeight="53.0" prefWidth="264.0" text="The Charleston" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <GridPane prefHeight="69.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnReservationOnAction" prefHeight="81.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Reservations" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/reservation.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="74.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnGuestOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Guest" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="41.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/list.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="65.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnReservationsDetailsOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Reservations Details" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="49.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/resume.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="70.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnRoomsOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Rooms" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/bed.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="62.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnFoodMenuOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Food Menu" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/menu.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="62.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnTourOnAction" prefHeight="55.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Tour" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/destination.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="65.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnTourDetailsOnAction" prefHeight="76.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Tour Details" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="52.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/tour-guide.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="72.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnOderOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Orders" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/menu%20(1).png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="61.0" prefWidth="392.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="392.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="CENTER" blendMode="OVERLAY" focusTraversable="false" graphicTextGap="10.0" onAction="#btnPaymentOnAction" prefHeight="73.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Payments" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <ImageView fitHeight="50.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/bill.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="712.0" fitWidth="1116.0" layoutX="392.0" layoutY="55.0" opacity="0.84" pickOnBounds="true">
+         <image>
+            <Image url="@../image/pg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="392.0" layoutY="-2.0" prefHeight="57.0" prefWidth="1116.0" style="-fx-background-color: #3a207f;">
+         <children>
+            <JFXButton layoutX="786.0" layoutY="12.0" onAction="#btnLogoutOnAction" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #64587d;" stylesheets="@../style/dashboard-form.css" text="Logout" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <Label fx:id="lblTime" layoutX="621.0" layoutY="9.0" prefHeight="41.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="416.0" layoutY="9.0" prefHeight="41.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="1054.0" layoutY="7.0" onMouseClicked="#btnStOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="880.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="932.0" layoutY="14.0" prefHeight="31.0" prefWidth="112.0" text="Administrator" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="14.0" prefHeight="31.0" prefWidth="65.0" text="Date :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="556.0" layoutY="14.0" prefHeight="31.0" prefWidth="65.0" text="Time :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tblRoom" layoutX="435.0" layoutY="189.0" prefHeight="398.0" prefWidth="1031.0" style="-fx-background-radius: 10px;" stylesheets="@../style/dashboard-form.css">
+         <columns>
+            <TableColumn fx:id="colRoomId" prefWidth="145.00003051757812" text="Room ID" />
+            <TableColumn fx:id="colRoomType" prefWidth="210.0" text="Room Type" />
+            <TableColumn fx:id="colRoomDetails" prefWidth="256.0" text="Room Details" />
+            <TableColumn fx:id="colNumberBeds" prefWidth="237.0" text="Number of Beds" />
+            <TableColumn fx:id="colPrice" prefWidth="180.0" text="Price" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-column" />
+            <String fx:value="table-row-cell" />
+         </styleClass>
+      </TableView>
+   </children>
+</AnchorPane>
